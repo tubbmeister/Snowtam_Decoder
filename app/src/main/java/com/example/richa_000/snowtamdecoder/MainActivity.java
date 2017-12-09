@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -193,14 +194,40 @@ public class MainActivity extends AppCompatActivity {
         });
 }
     public void Decode(View v) {
+        EditText BoxA = (EditText) findViewById(R.id.BoxA);
+        String BoxAdata = BoxA.getText().toString();
+        if (BoxAdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
 
-        Intent intent1 = new Intent(this,Decoded.class);
-        this.startActivity(intent1);
+            EditText BoxC = (EditText) findViewById(R.id.BoxC);
+            String BoxCdata = BoxC.getText().toString();
+            if (BoxCdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+                Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                        Toast.LENGTH_SHORT).show();
+            }
 
 
+            EditText BoxB = (EditText) findViewById(R.id.BoxB);
+            String BoxBdata = BoxB.getText().toString();
+            if (BoxBdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+                Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
 
-    }
-    }
+                        Toast.LENGTH_SHORT).show();
+                return; //quits method
+
+            }
+                Intent intent1 = new Intent(this, Decoded.class);
+                intent1.putExtra("messageA", BoxAdata); //"message" sends BoxAdata
+                intent1.putExtra("messageB", BoxBdata);
+                intent1.putExtra("messageC", BoxCdata);
+
+                this.startActivity(intent1);
+
+
+            }
+        }
 
 
 
