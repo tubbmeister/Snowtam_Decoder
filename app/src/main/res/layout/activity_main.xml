@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.richa_000.snowtamdecoder.MainActivity">
+
+    <EditText
+        android:id="@+id/BoxA"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="A"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BoxB"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="B"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxA"
+        app:layout_constraintStart_toEndOf="@+id/BoxA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BoxC"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="C"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxB"
+        app:layout_constraintStart_toEndOf="@+id/BoxB" />
+
+    <EditText
+        android:id="@+id/BoxD"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="D"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxA" />
+
+    <EditText
+        android:id="@+id/BoxE"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="E"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxF"
+        app:layout_constraintStart_toEndOf="@+id/BoxD"
+        app:layout_constraintTop_toBottomOf="@+id/BoxA" />
+
+    <EditText
+        android:id="@+id/BoxF"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="F"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/BoxE"
+        app:layout_constraintTop_toBottomOf="@+id/BoxA" />
+
+    <EditText
+        android:id="@+id/BoxG"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="G"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxD" />
+
+    <EditText
+        android:id="@+id/BoxH"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="H"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/BoxG"
+        app:layout_constraintTop_toBottomOf="@+id/BoxD" />
+
+    <EditText
+        android:id="@+id/BoxJ"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="J"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxH"
+        app:layout_constraintStart_toEndOf="@+id/BoxH" />
+
+    <EditText
+        android:id="@+id/BoxK"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="K"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxG" />
+
+    <EditText
+        android:id="@+id/BoxL"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="L"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/BoxK"
+        app:layout_constraintTop_toBottomOf="@+id/BoxG" />
+
+    <EditText
+        android:id="@+id/BoxM"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="M"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxL"
+        app:layout_constraintStart_toEndOf="@+id/BoxL" />
+
+    <EditText
+        android:id="@+id/BoxP"
+        android:layout_width="94dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="P"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxN"
+        app:layout_constraintStart_toEndOf="@+id/BoxN"
+        app:layout_constraintTop_toTopOf="@+id/BoxN" />
+
+    <EditText
+        android:id="@+id/BoxN"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="N"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxK" />
+
+    <EditText
+        android:id="@+id/BoxR"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="R"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxP"
+        app:layout_constraintStart_toEndOf="@+id/BoxP"
+        app:layout_constraintTop_toTopOf="@+id/BoxP" />
+
+    <EditText
+        android:id="@+id/BoxS"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxR"
+        app:layout_constraintStart_toEndOf="@+id/BoxR"
+        app:layout_constraintTop_toTopOf="@+id/BoxR" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="Decode"
+        android:text="Decode!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxN" />
+
+</android.support.constraint.ConstraintLayout>
