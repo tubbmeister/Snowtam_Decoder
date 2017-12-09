@@ -76,7 +76,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="F"
-        android:inputType="number"
+        android:inputType="text|number"
         app:layout_constraintStart_toEndOf="@+id/BoxE"
         app:layout_constraintTop_toBottomOf="@+id/BoxA" />
 
@@ -88,7 +88,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="G"
-        android:inputType="number"
+        android:inputType="text|number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BoxD" />
 
@@ -100,7 +100,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="H"
-        android:inputType="number"
+        android:inputType="text|number"
         app:layout_constraintStart_toEndOf="@+id/BoxG"
         app:layout_constraintTop_toBottomOf="@+id/BoxD" />
 
@@ -192,6 +192,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:ems="10"
+        android:hint="S"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/BoxR"
         app:layout_constraintStart_toEndOf="@+id/BoxR"

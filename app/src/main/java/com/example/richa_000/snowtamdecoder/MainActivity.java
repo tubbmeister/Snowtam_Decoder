@@ -207,7 +207,112 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
                         Toast.LENGTH_SHORT).show();
             }
+        EditText BoxD = (EditText) findViewById(R.id.BoxD);
+        String BoxDdata = BoxD.getText().toString();
+        if (BoxDdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxE = (EditText) findViewById(R.id.BoxE);
+        String BoxEdata = BoxE.getText().toString();
+        if (BoxEdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
 
+        EditText BoxF = (EditText) findViewById(R.id.BoxF);
+        String BoxFdata = BoxF.getText().toString();
+        String BoxF1data="0";
+        String BoxF2data="0";
+        if (BoxFdata.contains("/"))
+        {
+            String parts[]=BoxFdata.split("/");
+            BoxFdata=parts[0];
+             BoxF1data=parts[1];
+             BoxF2data=parts[2];
+        }
+        if (BoxFdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxG = (EditText) findViewById(R.id.BoxG);
+        String BoxGdata = BoxG.getText().toString();
+        String BoxG1data="0";
+        String BoxG2data="0";
+        if (BoxGdata.contains("/"))
+        {
+            String parts[]=BoxGdata.split("/");
+            BoxGdata=parts[0];
+            BoxG1data=parts[1];
+            BoxG2data=parts[2];
+        }
+        if (BoxGdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxH = (EditText) findViewById(R.id.BoxH);
+        String BoxHdata = BoxH.getText().toString();
+        String BoxH1data="0";
+        String BoxH2data="0";
+        if (BoxHdata.contains("/"))
+        {
+            String parts[]=BoxHdata.split("/");
+            BoxHdata=parts[0];
+            BoxH1data=parts[1];
+            BoxH2data=parts[2];
+        }
+        if (BoxHdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxJ = (EditText) findViewById(R.id.BoxJ);
+        String BoxJdata = BoxJ.getText().toString();
+        if (BoxJdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxK = (EditText) findViewById(R.id.BoxK);
+        String BoxKdata = BoxK.getText().toString();
+        if (BoxKdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxL = (EditText) findViewById(R.id.BoxL);
+        String BoxLdata = BoxL.getText().toString();
+        if (BoxLdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxM = (EditText) findViewById(R.id.BoxM);
+        String BoxMdata = BoxM.getText().toString();
+        if (BoxMdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxN = (EditText) findViewById(R.id.BoxN);
+        String BoxNdata = BoxN.getText().toString();
+        if (BoxNdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxP = (EditText) findViewById(R.id.BoxP);
+        String BoxPdata = BoxP.getText().toString();
+        if (BoxPdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxR = (EditText) findViewById(R.id.BoxR);
+        String BoxRdata = BoxR.getText().toString();
+        if (BoxRdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
+        EditText BoxS = (EditText) findViewById(R.id.BoxS);
+        String BoxSdata = BoxS.getText().toString();
+        if (BoxSdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
+            Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",
+                    Toast.LENGTH_SHORT).show();
+        }
 
             EditText BoxB = (EditText) findViewById(R.id.BoxB);
             String BoxBdata = BoxB.getText().toString();
@@ -222,6 +327,25 @@ public class MainActivity extends AppCompatActivity {
                 intent1.putExtra("messageA", BoxAdata); //"message" sends BoxAdata
                 intent1.putExtra("messageB", BoxBdata);
                 intent1.putExtra("messageC", BoxCdata);
+                intent1.putExtra("messageD", BoxDdata);
+                intent1.putExtra("messageE", BoxEdata);
+                intent1.putExtra("messageF1", BoxFdata);
+                intent1.putExtra("messageF2", BoxF1data);
+                intent1.putExtra("messageF3", BoxF2data);
+        intent1.putExtra("messageG", BoxGdata);
+        intent1.putExtra("messageG1", BoxG1data);
+        intent1.putExtra("messageG2", BoxG2data);
+        intent1.putExtra("messageH", BoxHdata);
+        intent1.putExtra("messageH1", BoxH1data);
+        intent1.putExtra("messageH2", BoxH2data);
+        intent1.putExtra("messageJ", BoxJdata);
+        intent1.putExtra("messageK", BoxKdata);
+        intent1.putExtra("messageL", BoxLdata);
+        intent1.putExtra("messageM", BoxMdata);
+        intent1.putExtra("messageN", BoxNdata);
+        intent1.putExtra("messageP", BoxPdata);
+        intent1.putExtra("messageR", BoxRdata);
+                intent1.putExtra("messageS", BoxSdata);
 
                 this.startActivity(intent1);
 
