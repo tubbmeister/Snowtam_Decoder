@@ -37,11 +37,20 @@ public class Decoded extends AppCompatActivity {
 
 
         TextView txtView = (TextView) findViewById(R.id.textView);
-        message1=message1 +"\n"+messageB+"\n"+messageC+"\n"+messageD+"\n"+messageE+"\n"
-                +messageF1+"  "+messageF2+"  "+messageF3+"\n" // adds line between strings
-        +messageG+"  "+messageG1+"  "+messageG2+"\n"+messageH+"  "+messageH1+"  "+messageH2+"\n"
-                +messageJ+"\n"+messageK+"\n"+messageL+"\n"+messageM+"\n"+messageN+"\n"
-                +messageP+"\n"+messageR+"\n"+messageS+"\n";
+        message1=message1 +"\n"+"Date and Time:  "+messageB+"\n"+"Runway:  "+messageC+
+                "\n"+"Cleared Runway Length:  "+messageD+"\n"
+                +"Cleared Runway Width:  "+messageE+"\n"
+                +"Deposits:  "+messageF1+"  "+messageF2+"  "+messageF3+"\n" // adds line between strings
+        +"Mean Depth:  "+messageG+"  "+messageG1+"  "+messageG2+"\n"
+                +"Braking Action:  "+messageH+"  "+messageH1+"  "+messageH2+"\n"
+                +"Critical Snowbanks:  "+messageJ+"\n"
+                +"Runway Lights Obscured?:  "+messageK+"\n"
+                +"Further Clearance Planned:  "+messageL+"\n"
+                +"Further Clearance By:  "+messageM+"\n"
+                +"Taxiway:  "+messageN+"\n"
+                +"Taxiway Snowbanks:  "+messageP+"\n"
+                +"Apron:  "+messageR+"\n"
+                +"Next Planned Observation:  "+messageS;
         txtView.setText(message1);
     }
 
