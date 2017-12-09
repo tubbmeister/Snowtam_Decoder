@@ -10,12 +10,18 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String SecondF;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    final EditText BoxA = (EditText) findViewById(R.id.BoxA);
+    final
+
+    EditText BoxA = (EditText) findViewById(R.id.BoxA);
         BoxA.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
         public void onFocusChange(View v, boolean hasFocus) {
@@ -224,12 +230,32 @@ public class MainActivity extends AppCompatActivity {
         String BoxFdata = BoxF.getText().toString();
         String BoxF1data="0";
         String BoxF2data="0";
+
         if (BoxFdata.contains("/"))
         {
-            String parts[]=BoxFdata.split("/");
+            String parts[]=BoxFdata.split("/");// checks for break in string
             BoxFdata=parts[0];
              BoxF1data=parts[1];
              BoxF2data=parts[2];
+
+            int length = BoxFdata.length();
+                if (length>1) {
+                    String a_char =Character.toString (BoxFdata.charAt(1));
+
+
+                        if (a_char.equals("7")) { //compare string
+                            SecondF="ICE";
+
+                        }
+                        else if (a_char.equals("8")){
+                            SecondF="Compacted Snow";
+                        }
+                        else if (a_char.equals("9")){
+                            SecondF="Frozen Ruts";
+                        }
+                }
+
+
         }
         if (BoxFdata.trim().equals("")) { //shows "Enter data" if nothing in first editText box
             Toast.makeText(getApplicationContext(), "Ensure all data boxes filled!!",

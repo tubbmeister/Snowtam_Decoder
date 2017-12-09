@@ -41,7 +41,7 @@ public class Decoded extends AppCompatActivity {
                 "\n"+"Cleared Runway Length:  "+messageD+"\n"
                 +"Cleared Runway Width:  "+messageE+"\n"
                 +"Deposits:  "+messageF1+"  "+messageF2+"  "+messageF3+"\n" // adds line between strings
-        +"Mean Depth:  "+messageG+"  "+messageG1+"  "+messageG2+"\n"
+        +"Mean Depth (mm):  "+messageG+"  "+messageG1+"  "+messageG2+"\n"
                 +"Braking Action:  "+messageH+"  "+messageH1+"  "+messageH2+"\n"
                 +"Critical Snowbanks:  "+messageJ+"\n"
                 +"Runway Lights Obscured?:  "+messageK+"\n"
