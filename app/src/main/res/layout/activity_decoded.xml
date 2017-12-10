@@ -7,26 +7,14 @@
     tools:context="com.example.richa_000.snowtamdecoder.Decoded">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="317dp"
-        android:layout_height="82dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="    It's time for the \n    pillow....."
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:id="@+id/textView"
+        android:layout_width="335dp"
+        android:layout_height="465dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="363dp"
-        android:layout_height="371dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </android.support.constraint.ConstraintLayout>

@@ -229,8 +229,8 @@ public class MainActivity extends AppCompatActivity {
 
         EditText BoxF = (EditText) findViewById(R.id.BoxF);
         String BoxFdata = BoxF.getText().toString();
-        String BoxF1data = "0";
-        String BoxF2data = "0";
+        String BoxF1data = "";
+        String BoxF2data = "";
         String a_char;
 
         if (BoxFdata.contains("/")) {// check if more than one segment
