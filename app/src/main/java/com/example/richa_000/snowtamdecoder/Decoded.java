@@ -17,9 +17,12 @@ public class Decoded extends AppCompatActivity {
         String messageC = bundle.getString("messageC"); //message is what sends message
         String messageD = bundle.getString("messageD"); //message is what sends message
         String messageE = bundle.getString("messageE"); //message is what sends message
-        String messageF1 = bundle.getString("messageF1"); //message is what sends message
-        String messageF2 = bundle.getString("messageF2"); //message is what sends message
-        String messageF3 = bundle.getString("messageF3"); //message is what sends message
+        String messageF1a = bundle.getString("messageF1a"); //message is what sends message
+        String messageF1b = bundle.getString("messageF1b");
+        String messageF2a = bundle.getString("messageF2a"); //message is what sends message
+        String messageF2b = bundle.getString("messageF2b"); //message is what sends message
+        String messageF3a = bundle.getString("messageF3a");
+        String messageF3b = bundle.getString("messageF3b");
         String messageG = bundle.getString("messageG"); //message is what sends message
         String messageG1 = bundle.getString("messageG1"); //message is what sends message
         String messageG2 = bundle.getString("messageG2"); //message is what sends message
@@ -40,7 +43,8 @@ public class Decoded extends AppCompatActivity {
         message1=message1 +"\n"+"Date and Time:  "+messageB+"\n"+"Runway:  "+messageC+
                 "\n"+"Cleared Runway Length:  "+messageD+"\n"
                 +"Cleared Runway Width:  "+messageE+"\n"
-                +"Deposits:  "+messageF1+"  "+messageF2+"  "+messageF3+"\n" // adds line between strings
+                +"Deposits:  "+messageF1a+" "+messageF1b+" / "+
+                messageF2a+" "+messageF2b+" / "+messageF3a+" "+messageF3b+"\n" // adds line between strings
         +"Mean Depth (mm):  "+messageG+"  "+messageG1+"  "+messageG2+"\n"
                 +"Braking Action:  "+messageH+"  "+messageH1+"  "+messageH2+"\n"
                 +"Critical Snowbanks:  "+messageJ+"\n"
